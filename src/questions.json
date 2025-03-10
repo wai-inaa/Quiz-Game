@@ -1,0 +1,194 @@
+{
+  "English": {
+    "Easy": [
+      { "id": 1, "question": "What is the opposite of 'Big'?", "options": ["Tall", "Small", "Fast", "Short"], "correct": "Small" },
+      { "id": 2, "question": "Which word is a color?", "options": ["Apple", "Red", "Chair", "Jump"], "correct": "Red" },
+      { "id": 3, "question": "How many letters are in the word 'DOG'?", "options": ["2", "3", "4", "5"], "correct": "3" },
+      { "id": 4, "question": "What sound does a cow make?", "options": ["Moo", "Meow", "Bark", "Tweet"], "correct": "Moo" },
+      { "id": 5, "question": "Which of these is a vowel?", "options": ["B", "C", "E", "G"], "correct": "E" },
+      { "id": 6, "question": "What comes after 'A'?", "options": ["D", "C", "B", "E"], "correct": "B" },
+      { "id": 7, "question": "Which word means the same as 'Happy'?", "options": ["Sad", "Joyful", "Angry", "Sleepy"], "correct": "Joyful" },
+      { "id": 8, "question": "Which hand gesture means 'Hello'?", "options": ["👋", "✊", "✌", "🤞"], "correct": "👋" },
+      { "id": 9, "question": "What is the plural of 'Cat'?", "options": ["Cats", "Cates", "Cat's", "Catt"], "correct": "Cats" },
+      { "id": 10, "question": "Show the sign for the letter 'A'.", "options": ["✋", "👌", "👆", "✊"], "correct": "✊"}
+    ],
+    "Medium": [
+      { "id": 11, "question": "Which is the sign for 'Thank you'?", "options": ["👋", "✋", "🤟", "👐"], "correct":"🤟"},
+      { "id": 12, "question": "Which is a noun?", "options": ["Run", "Happy", "Table", "Quickly"], "correct": "Table" },
+      { "id": 13, "question": "Which sign represents the word 'Yes'?", "options":  ["👊", "🤞", "👍", "✌"], "correct": "👍" },
+      { "id": 14, "question": "Which word means the same as 'Fast'?", "options": ["Slow", "Quick", "Heavy", "Sad"], "correct": "Quick" },
+      { "id": 15, "question": "Which word means the opposite of 'Light'?", "options": ["Bright", "Dark", "Tall", "Deep"], "correct": "Dark" },
+      { "id": 16, "question": "Which is a synonym of 'Happy'?", "options": ["Sad", "Excited", "Angry", "Joyful"], "correct": "Joyful" },
+      { "id": 17, "question": "What is the plural of 'Mouse'?", "options": ["Mouses", "Mice", "Mousees", "Mous"], "correct": "Mice" },
+      { "id": 18, "question": "What is the opposite of 'Gentle'?", "options": ["Soft", "Kind", "Harsh", "Polite"], "correct": "Harsh" },
+      { "id": 19, "question": "Which of these is an adverb?", "options": ["Slowly", "Big", "Table", "Run"], "correct": "Slowly" },
+      { "id": 20, "question": "What is the correct past participle of 'Eat'?", "options": ["Ate", "Eaten", "Eating", "Eats"], "correct": "Eaten" }
+    ],
+    "Hard": [
+      { "id": 21, "question": "What is the synonym of 'Brave'?", "options": ["Coward", "Fearless", "Happy", "Sad"], "correct": "Fearless" },
+      { "id": 22, "question": "What is the antonym of 'Kind'?", "options": ["Mean", "Soft", "Happy", "Fast"], "correct": "Mean" },
+      { "id": 23, "question": "What is the plural of 'Child'?", "options": ["Childs", "Children", "Childes", "Childz"], "correct": "Children" },
+      { "id": 24, "question": "Complete the sentence: I ____ a book.", "options": ["read", "reads", "reading", "is reading"], "correct": "read" },
+      { "id": 25, "question": "Which is an example of a proper noun?", "options": ["City", "Ali", "River", "School"], "correct": "Ali" },
+      { "id": 26, "question": "Which sentence is grammatically correct?", "options": ["He don't like ice cream.", "He doesn't like ice cream.", "He not like ice cream.", "He didn't likes ice cream."], "correct": "He doesn't like ice cream." },
+      { "id": 27, "question": "Which word is a conjunction?", "options": ["And", "Run", "Apple", "Happy"], "correct": "And" },
+      { "id": 28, "question": "Which is a preposition?", "options": ["On", "Happy", "Jump", "Quick"], "correct": "On" },
+      { "id": 29, "question": "Which part of speech describes a verb?", "options": ["Noun", "Adjective", "Adverb", "Pronoun"], "correct": "Adverb" },
+      { "id": 30, "question": "Which sentence is in past tense?", "options": ["She dances.", "She danced.", "She dancing.", "She will dance."], "correct": "She danced." }
+    ]
+  },
+    "Urdu": {
+      "Easy": [
+        { "id": 31, "question": "کتاب کا مطلب کیا ہے؟", "options": ["Book", "Pen", "Chair", "Table"], "correct": "Book" },
+        { "id": 32, "question": "بلی کونسا جانور ہے؟", "options": ["پانی کا", "ہوا کا", "زمینی", "جنگلی"], "correct": "زمینی" },
+        { "id": 33, "question": "سیب کس رنگ کا ہوتا ہے؟", "options": ["نیلا", "لال", "سفید", "سبز"], "correct": "لال" },
+        { "id": 34, "question": "چاند رات کو کہاں نظر آتا ہے؟", "options": ["زمین", "پہاڑ", "دریا", "آسمان"], "correct": "آسمان" },
+        { "id": 35, "question": "کس چیز کے بغیر زندہ رہنا ممکن نہیں؟", "options": ["پانی", "کپڑے", "گاڑی", "کمپیوٹر"], "correct": "پانی" },
+        { "id": 36, "question": "سورج دن میں کیسا دکھائی دیتا ہے؟", "options": ["چمکدار", "اندھیرا", "سرخ", "سبز"], "correct": "چمکدار" },
+        { "id": 37, "question": "دودھ کس چیز سے حاصل ہوتا ہے؟", "options": ["درخت", "پانی", "گائے", "پہاڑ"], "correct": "گائے" },
+        { "id": 38, "question": "سب سے چھوٹا پرندہ کونسا ہے؟", "options": ["کبوتر", "چڑیا", "طوطا", "مور"], "correct": "چڑیا" },
+        { "id": 39, "question": "پاکستان کا قومی کھیل کونسا ہے؟", "options": ["فٹ بال", "کرکٹ", "ہاکی", "بیڈمنٹن"], "correct": "ہاکی" },
+        { "id": 40, "question": "پاکستان کا قومی جانور کونسا ہے؟", "options": ["ہرن", "چیتا", "مارخور", "شیر"], "correct": "مارخور" }
+      ],
+      "Medium": [
+        { "id": 41, "question": "سورج کہاں نکلتا ہے؟", "options": ["مغرب", "شمال", "مشرق", "جنوب"], "correct": "مشرق" },
+        { "id": 42, "question": "پانی کا رنگ کیا ہوتا ہے؟", "options": ["سبز", "نیلا", "سرخ", "بے رنگ"], "correct": "بے رنگ" },
+        { "id": 43, "question": "پاکستان کا دارالحکومت کیا ہے؟", "options": ["لاہور", "اسلام آباد", "کراچی", "پشاور"], "correct": "اسلام آباد" },
+        { "id": 44, "question": "ہمارے جسم میں کتنی آنکھیں ہوتی ہیں؟", "options": ["ایک", "دو", "تین", "چار"], "correct": "دو" },
+        { "id": 45, "question": "چاندنی رات میں کیا نظر آتا ہے؟", "options": ["سورج", "چاند", "بادل", "درخت"], "correct": "چاند" },
+        { "id": 46, "question": "پرندے کہاں رہتے ہیں؟", "options": ["گھونسلے میں", "زمین پر", "پانی میں", "غار میں"], "correct": "گھونسلے میں" },
+        { "id": 47, "question": "سب سے بڑا دریا کونسا ہے؟", "options": ["دریائے راوی", "دریائے چناب", "دریائے سندھ", "دریائے جہلم"], "correct": "دریائے سندھ" },
+        { "id": 48, "question": "بچوں کو پڑھانے والا کون ہوتا ہے؟", "options": ["ڈاکٹر", "استاد", "دکاندار", "کسان"], "correct": "استاد" },
+        { "id": 49, "question": "دن اور رات کیوں بنتے ہیں؟", "options": ["سورج کی روشنی", "چاند کی چمک", "زمین کی گردش", "بادل"], "correct": "زمین کی گردش" },
+        { "id": 50, "question": "کس جاندار کو پانی کے بغیر زندہ نہیں رہ سکتا؟", "options": ["انسان", "مچھلی", "پرندہ", "درخت"], "correct": "مچھلی" }
+      ],
+      "Hard": [
+        { "id": 51, "question": "پاکستان کب آزاد ہوا؟", "options": ["1940", "1945", "1947", "1950"], "correct": "1947" },
+        { "id": 52, "question": "سب سے بڑا پہاڑ کونسا ہے؟", "options": ["کوہ ہمالیہ", "کے ٹو", "نانگا پربت", "چترال"], "correct": "کے ٹو" },
+        { "id": 53, "question": "دھوپ سے ہمیں کیا ملتا ہے؟", "options": ["اندھیرا", "روشنی اور گرمی", "بادل", "ٹھنڈ"], "correct": "روشنی اور گرمی" },
+        { "id": 54, "question": "سب سے زیادہ استعمال ہونے والی زبان کونسی ہے؟", "options": ["اردو", "انگریزی", "پنجابی", "سندھی"], "correct": "انگریزی" },
+        { "id": 55, "question": "درخت ہمیں کیا دیتا ہے؟", "options": ["روشنی", "پانی", "آکسیجن", "دھواں"], "correct": "آکسیجن" },
+        { "id": 56, "question": "سب سے زیادہ بولی جانے والی زبان کونسی ہے؟", "options": ["انگریزی", "چینی", "ہسپانوی", "اردو"], "correct": "چینی" },
+        { "id": 57, "question": "ہمارا دل کس کام میں مدد دیتا ہے؟", "options": ["سونے میں", "خون کی روانی میں", "کھانے میں", "چلنے میں"], "correct": "خون کی روانی میں" },
+        { "id": 58, "question": "کتنے دنوں میں ایک سال مکمل ہوتا ہے؟", "options": ["100", "200", "365", "400"], "correct": "365" },
+        { "id": 59, "question": "کونسا سیارہ سب سے بڑا ہے؟", "options": ["زمین", "مریخ", "مشتری", "زہرہ"], "correct": "مشتری" },
+        { "id": 60, "question": "ہمارا قومی پھول کونسا ہے؟", "options": ["گلاب", "چنبیلی", "سورج مکھی", "کمل"], "correct": "چنبیلی" }
+      ]
+    },
+   "Math": {
+      "Easy": [
+        { "id": 61, "question": "2 + 2 equals?", "options": ["3", "4", "5", "6"], "correct": "4" },
+        { "id": 62, "question": "What is the number after 5?", "options": ["4", "6", "7", "8"], "correct": "6" },
+        { "id": 63, "question": "How many sides does a triangle have?", "options": ["2", "3", "4", "5"], "correct": "3" },
+        { "id": 64, "question": "Which number is the smallest?", "options": ["8", "3", "5", "6"], "correct": "3" },
+        { "id": 65, "question": "Count the apples: 🍏🍏🍏🍏🍏", "options": ["4", "5", "6", "7"], "correct": "5" },
+        { "id": 66, "question": "What shape is a ball?", "options": ["Square", "Circle", "Triangle", "Rectangle"], "correct": "Circle" },
+        { "id": 67, "question": "What is 3 + 1?", "options": ["2", "3", "4", "5"], "correct": "4" },
+        { "id": 68, "question": "How many fingers are on one hand?", "options": ["3", "4", "5", "6"], "correct": "5" },
+        { "id": 69, "question": "How do you show 5 using fingers?", "options": ["✋", "👊", "✌", "👍"], "correct": "✋" },
+        { "id": 70, "question": "How many corners does a square have?", "options": ["2", "3", "4", "5"], "correct": "4" }
+      ],
+      "Medium": [
+        { "id": 71, "question": "5 × 2 equals?", "options": ["5", "10", "15", "20"], "correct": "10" },
+        { "id": 72, "question": "Which number is even?", "options": ["3", "7", "8", "9"], "correct": "8" },
+        { "id": 73, "question": "What is half of 10?", "options": ["2", "4", "5", "6"], "correct": "5" },
+        { "id": 74, "question": "Which shape has no corners?", "options": ["Square", "Triangle", "Rectangle", "Circle"], "correct": "Circle" },
+        { "id": 75, "question": "What is 12 - 4?", "options": ["6", "7", "8", "9"], "correct": "8" },
+        { "id": 76, "question": "What comes after 19?", "options": ["18", "20", "21", "22"], "correct": "20" },
+        { "id": 77, "question": "Which number is the biggest?", "options": ["25", "30", "45", "50"], "correct": "50" },
+        { "id": 78, "question": "What is 3 × 3?", "options": ["6", "8", "9", "10"], "correct": "9" },
+        { "id": 79, "question": "Which number is in between 10 and 12?", "options": ["9", "10", "11", "12"], "correct": "11" },
+        { "id": 80, "question": "What is 6 ÷ 2?", "options": ["2", "3", "4", "5"], "correct": "3" }
+      ],
+      "Hard": [
+        { "id": 81, "question": "What is 8 × 3?", "options": ["16", "24", "32", "36"], "correct": "24" },
+        { "id": 82, "question": "What is 50 - 25?", "options": ["10", "20", "25", "30"], "correct": "25" },
+        { "id": 83, "question": "What is 9 + 8?", "options": ["15", "16", "17", "18"], "correct": "17" },
+        { "id": 84, "question": "Which shape has 6 sides?", "options": ["Triangle", "Square", "Hexagon", "Pentagon"], "correct": "Hexagon" },
+        { "id": 85, "question": "What is the sum of 12 + 13?", "options": ["24", "25", "26", "27"], "correct": "25" },
+        { "id": 86, "question": "What is 100 - 45?", "options": ["50", "55", "60", "65"], "correct": "55" },
+        { "id": 87, "question": "Which is the smallest 3-digit number?", "options": ["099", "100", "101", "110"], "correct": "100" },
+        { "id": 88, "question": "What is the next even number after 22?", "options": ["23", "24", "25", "26"], "correct": "24" },
+        { "id": 89, "question": "What is 9 × 9?", "options": ["72", "81", "90", "99"], "correct": "81" },
+        { "id": 90, "question": "Which of these is a prime number?", "options": ["12", "15", "17", "20"], "correct": "17" }
+      ]
+    },
+      "Science": {
+        "Easy": [
+          { "id": 91, "question": "Which animal says 'Meow'?", "options": ["Dog", "Cat", "Cow", "Sheep"], "correct": "Cat" },
+          { "id": 92, "question": "What do plants need to grow?", "options": ["Gold", "Plastic", "Water", "Paper"], "correct": "Water" },
+          { "id": 93, "question": "Which part of the body helps us to see?", "options": ["Ears", "Nose", "Eyes", "Hands"], "correct": "Eyes" },
+          { "id": 94, "question": "What color is the sky on a clear day?", "options": ["Red", "Blue", "Green", "Yellow"], "correct": "Blue" },
+          { "id": 95, "question": "What do we breathe in to stay alive?", "options": ["Oxygen", "Water", "Milk", "Juice"], "correct": "Oxygen" },
+          { "id": 96, "question": "Which body part helps us to hear?", "options": ["Eyes", "Nose", "Ears", "Legs"], "correct": "Ears" },
+          { "id": 97, "question": "Which is a source of light?", "options": ["Moon", "Sun", "Earth", "Tree"], "correct": "Sun" },
+          { "id": 98, "question": "What is used to cut paper?", "options": ["Pen", "Scissors", "Eraser", "Ruler"], "correct": "Scissors" },
+          { "id": 99, "question": "Which animal lives in water?", "options": ["Dog", "Fish", "Cat", "Lion"], "correct": "Fish" },
+          { "id": 100, "question": "What do bees make?", "options": ["Milk", "Honey", "Water", "Juice"], "correct": "Honey" }
+        ],
+        "Medium": [
+          { "id": 101, "question": "Which gas do we exhale?", "options": ["Oxygen", "Carbon Dioxide", "Nitrogen", "Hydrogen"], "correct": "Carbon Dioxide" },
+          { "id": 102, "question": "Which part of a plant grows underground?", "options": ["Leaves", "Stem", "Roots", "Flowers"], "correct": "Roots" },
+          { "id": 103, "question": "Which sense organ helps us smell?", "options": ["Eyes", "Nose", "Ears", "Hands"], "correct": "Nose" },
+          { "id": 104, "question": "What do we wear to protect our eyes from the sun?", "options": ["Gloves", "Hat", "Sunglasses", "Shoes"], "correct": "Sunglasses" },
+          { "id": 105, "question": "What is the largest organ in the human body?", "options": ["Heart", "Brain", "Liver", "Skin"], "correct": "Skin" },
+          { "id": 106, "question": "What do birds use to fly?", "options": ["Legs", "Fins", "Wings", "Hands"], "correct": "Wings" },
+          { "id": 107, "question": "Which of these is a non-living thing?", "options": ["Tree", "Rock", "Fish", "Dog"], "correct": "Rock" },
+          { "id": 108, "question": "What helps us move our body?", "options": ["Bones", "Hair", "Fingers", "Nose"], "correct": "Bones" },
+          { "id": 109, "question": "What is rain made of?", "options": ["Sand", "Water", "Air", "Fire"], "correct": "Water" },
+          { "id": 110, "question": "Which planet do we live on?", "options": ["Mars", "Venus", "Earth", "Jupiter"], "correct": "Earth" }
+        ],
+        "Hard": [
+          { "id": 111, "question": "Which planet is closest to the sun?", "options": ["Earth", "Venus", "Mercury", "Mars"], "correct": "Mercury" },
+          { "id": 112, "question": "What is the process by which plants make their own food?", "options": ["Digestion", "Respiration", "Photosynthesis", "Circulation"], "correct": "Photosynthesis" },
+          { "id": 113, "question": "Which gas is most abundant in Earth's atmosphere?", "options": ["Oxygen", "Carbon Dioxide", "Nitrogen", "Hydrogen"], "correct": "Nitrogen" },
+          { "id": 114, "question": "What is the boiling point of water?", "options": ["50°C", "75°C", "100°C", "150°C"], "correct": "100°C" },
+          { "id": 115, "question": "What is the hardest substance in the human body?", "options": ["Bone", "Teeth Enamel", "Skin", "Nails"], "correct": "Teeth Enamel" },
+          { "id": 116, "question": "Which organ pumps blood in the human body?", "options": ["Brain", "Lungs", "Heart", "Kidneys"], "correct": "Heart" },
+          { "id": 117, "question": "What do we call animals that eat only plants?", "options": ["Carnivores", "Omnivores", "Herbivores", "Scavengers"], "correct": "Herbivores" },
+          { "id": 118, "question": "What causes day and night?", "options": ["Sun's movement", "Moon's light", "Earth's rotation", "Clouds"], "correct": "Earth's rotation" },
+          { "id": 119, "question": "Which is the largest planet in the solar system?", "options": ["Earth", "Saturn", "Jupiter", "Mars"], "correct": "Jupiter" },
+          { "id": 120, "question": "Which part of the body is responsible for thinking?", "options": ["Heart", "Brain", "Lungs", "Stomach"], "correct": "Brain" }
+        ]
+      },
+      "Drawing": {
+        "Easy": [
+          { "id": 121, "question": "Draw a circle using hand gestures.", "options":  ["👐", "👋", "🔵", "👌"], "correct": "🔵"},
+          { "id": 122, "question": "Which shape has 4 equal sides?", "options": ["Circle", "Square", "Triangle", "Rectangle"], "correct": "Square" },
+          { "id": 123, "question": "What tool is used to draw straight lines?", "options": ["Brush", "Eraser", "Ruler", "Compass"], "correct": "Ruler" },
+          { "id": 124, "question": "What do you call a drawing made with a pencil?", "options": ["Sketch", "Painting", "Sculpture", "Mosaic"], "correct": "Sketch" },
+          { "id": 125, "question": "Which color is made by mixing blue and yellow?", "options": ["Green", "Purple", "Red", "Black"], "correct": "Green" },
+          { "id": 126, "question": "What do we use to color a drawing?", "options": ["Scissors", "Colors", "Eraser", "Glue"], "correct": "Colors" },
+          { "id": 127, "question": "Which of these is a warm color?", "options": ["Blue", "Green", "Yellow", "Black"], "correct": "Yellow" },
+          { "id": 128, "question": "Which shape has no corners?", "options": ["Square", "Rectangle", "Triangle", "Circle"], "correct": "Circle" },
+          { "id": 129, "question": "What do we use to erase mistakes in a drawing?", "options": ["Brush", "Eraser", "Marker", "Crayon"], "correct": "Eraser" },
+          { "id": 130, "question": "Which of these is a primary color?", "options": ["Purple", "Green", "Red", "Orange"], "correct": "Red" }
+        ],
+        "Medium": [
+          { "id": 131, "question": "What do we use to mix colors?", "options": ["Brush", "Eraser", "Ruler", "Compass"], "correct": "Brush" },
+          { "id": 132, "question": "Which of these is a cool color?", "options": ["Red", "Orange", "Blue", "Yellow"], "correct": "Blue" },
+          { "id": 133, "question": "What do artists paint on?", "options": ["Paper", "Canvas", "Glass", "Cloth"], "correct": "Canvas" },
+          { "id": 134, "question": "What is the opposite of dark colors?", "options": ["Neutral", "Bright", "Soft", "Muted"], "correct": "Bright" },
+          { "id": 135, "question": "Which tool is used to sharpen a pencil?", "options": ["Brush", "Ruler", "Sharpener", "Eraser"], "correct": "Sharpener" },
+          { "id": 136, "question": "What do we use to stick paper together?", "options": ["Scissors", "Glue", "Brush", "Pencil"], "correct": "Glue" },
+          { "id": 137, "question": "Which of these is used for shading?", "options": ["Pencil", "Marker", "Eraser", "Glue"], "correct": "Pencil" },
+          { "id": 138, "question": "What do we call a painting made with watercolors?", "options": ["Sketch", "Portrait", "Watercolor painting", "Mural"], "correct": "Watercolor painting" },
+          { "id": 139, "question": "Which is an example of texture in drawing?", "options": ["Smooth", "Colorful", "Bright", "Round"], "correct": "Smooth" },
+          { "id": 140, "question": "What is the main use of a stencil?", "options": ["Cutting", "Tracing shapes", "Erasing", "Shading"], "correct": "Tracing shapes" }
+        ],
+        "Hard": [
+          { "id": 141, "question": "Which of these colors is NOT a primary color?", "options": ["Blue", "Green", "Red", "Yellow"], "correct": "Green" },
+          { "id": 142, "question": "Which tool is used to mix colors in painting?", "options": ["Palette", "Ruler", "Brush", "Sharpener"], "correct": "Palette" },
+          { "id": 143, "question": "Which type of painting uses melted wax?", "options": ["Oil painting", "Watercolor", "Encaustic", "Acrylic"], "correct": "Encaustic" },
+          { "id": 144, "question": "What is a painting of a person’s face called?", "options": ["Landscape", "Still life", "Portrait", "Abstract"], "correct": "Portrait" },
+          { "id": 145, "question": "Which of these is NOT a painting style?", "options": ["Cubism", "Realism", "Impressionism", "Geography"], "correct": "Geography" },
+          { "id": 146, "question": "What is the purpose of a perspective drawing?", "options": ["To show color", "To create depth", "To mix colors", "To erase lines"], "correct": "To create depth" },
+          { "id": 147, "question": "Which color do you get by mixing red and blue?", "options": ["Green", "Purple", "Yellow", "Orange"], "correct": "Purple" },
+          { "id": 148, "question": "What do we call a quick rough drawing?", "options": ["Sketch", "Mosaic", "Portrait", "Calligraphy"], "correct": "Sketch" },
+          { "id": 149, "question": "What do we use to protect a painting?", "options": ["Glue", "Fixative spray", "Water", "Soap"], "correct": "Fixative spray" },
+          { "id": 150, "question": "Which art form uses tiny pieces of colored material?", "options": ["Calligraphy", "Mosaic", "Sculpture", "Sketch"], "correct": "Mosaic" }
+        ]
+      }
+    }
+    
+  
