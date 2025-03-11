@@ -11,17 +11,25 @@ const QuizPage = ({ subject, difficulty, onGameEnd }) => {
     const [currentIndex, setCurrentIndex] = useState(0);
     const [selectedOption, setSelectedOption] = useState(null);
     const [score, setScore] = useState(0);
-    const [setShowResult] = useState(false);
+    const [showResult, setShowResult] = useState(false);
     const [feedback, setFeedback] = useState("");
+
     useEffect(() => {
+        console.log("Subject:", subject, "Difficulty:", difficulty); // Debugging log
+        console.log("Fetched Questions:", questionsData[subject]?.[difficulty]); // Debugging log
+
         if (questionsData[subject] && questionsData[subject][difficulty]) {
             setQuestions(questionsData[subject][difficulty]);
+        } else {
+            setQuestions([]); // Ensure questions is always an array
         }
     }, [subject, difficulty]);
+
     const handleAnswerClick = (option) => {
         setSelectedOption(option);
         let updatedScore = score;
-        if (option === questions[currentIndex].correct) {
+
+        if (questions[currentIndex] && option === questions[currentIndex].correct) {
             updatedScore += 10;
             setScore(updatedScore);
             setFeedback("✅ Great Job! 🎉");
@@ -42,6 +50,7 @@ const QuizPage = ({ subject, difficulty, onGameEnd }) => {
             }
         }, 1200);
     };
+
     return (
         <div className="quiz-container flex flex-col items-center justify-center h-screen w-[800px] bg-gradient-to-r from-pink-400 to-blue-400 text-white transition-all duration-500 relative">
             <img 
@@ -53,20 +62,23 @@ const QuizPage = ({ subject, difficulty, onGameEnd }) => {
                 <img src={ScoreIcon} alt="Score" className="w-12 h-12 mr-3" />
                 {score}
             </div>
-            {questions.length > 0 ? (
+
+            {questions.length > 0 && questions[currentIndex] ? (
                 <>
-                    <h2 className="text-5xl font-extrabold animate-pulse">🎈 Question {currentIndex + 1} of {questions.length}</h2>
+                    <h2 className="text-5xl font-extrabold animate-pulse">
+                        🎈 Question {currentIndex + 1} of {questions.length}
+                    </h2>
                     <p className="text-3xl mt-6 bg-white text-black px-8 py-6 rounded-2xl shadow-xl">
-                        {questions[currentIndex].question}
+                        {questions[currentIndex]?.question ?? "Loading..."} {/* ✅ Safe access */}
                     </p>
                     <div className="grid grid-cols-2 gap-6 mt-8">
-                        {questions[currentIndex].options.map((option, index) => (
+                        {questions[currentIndex]?.options?.map((option, index) => (
                             <button
                                 key={index}
                                 className={`p-6 rounded-full text-xl font-semibold transition-all duration-300 hover:scale-110 transform shadow-lg
                                     ${
                                         selectedOption === option 
-                                            ? (option === questions[currentIndex].correct ? "bg-green-500" : "bg-red-500") 
+                                            ? (option === questions[currentIndex]?.correct ? "bg-green-500" : "bg-red-500") 
                                             : "bg-yellow-400 hover:bg-yellow-500"
                                     }`}
                                 onClick={() => handleAnswerClick(option)}
@@ -91,4 +103,5 @@ const QuizPage = ({ subject, difficulty, onGameEnd }) => {
         </div>
     );
 };
+
 export default QuizPage;
