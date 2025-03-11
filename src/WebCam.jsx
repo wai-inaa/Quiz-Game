@@ -1,5 +1,5 @@
 import { useState, useRef } from "react";
-import UploadIcon from "./upload.gif"; 
+import Upload from "./upload.gif"; 
 import WebcamIcon from "./webcam.gif"; 
 const WebcamUpload = () => {
   const [selectedFile, setSelectedFile] = useState(null);
@@ -30,7 +30,7 @@ const WebcamUpload = () => {
         <video ref={videoRef} autoPlay className="border-4 border-white w-64 h-48 shadow-xl rounded-lg"></video>
       )}
       <label className="cursor-pointer flex items-center px-6 py-3 bg-blue-500 hover:bg-blue-700 text-white text-xl font-bold rounded-full shadow-lg transition-all duration-300 transform hover:scale-110">
-        <img src={UploadIcon} alt="Upload" className="w-8 h-8 mr-2" />
+        <img src={Upload} alt="Upload" className="w-8 h-8 mr-2" />
         Upload File
         <input 
           type="file" 
