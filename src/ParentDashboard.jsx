@@ -11,8 +11,8 @@ const ParentDashboard = ({ childName, onBack }) => {
   return (
     <div className="flex flex-col items-center justify-start w-screen h-screen bg-gradient-to-r from-yellow-400 to-red-400 text-white p-6 relative">
       
-      <img src="/Gifs/Parent.gif" alt="Parent" className="absolute top-6 left-6 w-40 h-40 animate-bounce" />
-      
+      <img src="/Gifs/Parent.gif" alt="Parent" className="absolute top-6 left-6 w-40 h-40 animate-pulse" />
+      <img src="/Gifs/result.gif" alt="result" className="absolute bottom-6 right-6 w-40 h-40" />
       <h1 className="text-5xl font-extrabold bg-white text-red-600 px-6 py-3 rounded-xl shadow-xl">
         📊 {childName}'s Progress Report
       </h1>
@@ -54,7 +54,7 @@ const ParentDashboard = ({ childName, onBack }) => {
         className="mt-8 flex items-center bg-blue-600 hover:bg-blue-800 text-white text-xl font-bold px-6 py-3 rounded-full shadow-xl transition-transform transform hover:scale-110"
         onClick={onBack}
       >
-        <img src="/Gifs/back.png" alt="Back" className="w-8 h-8 mr-2" />
+        <img src="/png/back.png" alt="Back" className="w-8 h-8 mr-2" />
         Back to Main Menu
       </button>
     </div>
