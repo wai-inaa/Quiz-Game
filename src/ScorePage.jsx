@@ -1,8 +1,5 @@
 import React from "react";
 import Confetti from "react-confetti";
-import Celebration from "./Celebration.gif"; 
-import SadFace from "./TryAgain.gif"; 
-
 const ScoreBoard = ({ score, onRestart }) => {
   let badge;
   let celebration = false;
@@ -21,7 +18,7 @@ const ScoreBoard = ({ score, onRestart }) => {
   }
 
   return (
-    <div className={`h-screen w-[1200px] flex flex-col items-center justify-center ${
+    <div className={`h-screen w-screen flex flex-col items-center justify-center ${
       sadScreen ? "bg-gradient-to-r from-purple-400 to-red-400" : "bg-gradient-to-r from-purple-400 to-red-400"
     } text-white relative`}>
       {celebration && <Confetti />}
@@ -30,14 +27,14 @@ const ScoreBoard = ({ score, onRestart }) => {
           <h1 className="text-5xl font-extrabold animate-bounce">🎊 Game Over!</h1>
           <p className="text-3xl mt-4 font-bold">Your Score: {score}/100</p>
           <p className="text-4xl mt-6">{badge}</p>
-          <img src={Celebration} alt="Celebration" className="w-60 h-60 mt-6 animate-spin-slow" />
+          <img src="/Gifs/Celebration.gif" alt="Celebration" className="w-60 h-60 mt-6 animate-spin-slow" />
         </>
       ) : (
 
         <>
           <h1 className="text-5xl font-extrabold text-red-500">☹️ Try Again!</h1>
           <p className="text-3xl mt-4 font-bold text-gray-300">Your Score: {score}/100</p>
-          <img src={SadFace} alt="Try Again" className="w-60 h-60 mt-6 opacity-80" />
+          <img src="/Gifs/TryAgain.gif" alt="Try Again" className="w-60 h-60 mt-6 opacity-80" />
         </>
       )}
       <button 

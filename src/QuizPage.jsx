@@ -3,8 +3,6 @@ import questionsData from "./questions.json";
 import CharacterMascot from "./Character"; 
 import SoundEffects from "./SoundEffects"; 
 import WebcamUpload from "./WebCam";
-import ScoreIcon from "./Score.gif";
-import QuizGif from "./Quiz.gif";
 
 const QuizPage = ({ subject, difficulty, onGameEnd }) => {
     const [questions, setQuestions] = useState([]);
@@ -15,13 +13,13 @@ const QuizPage = ({ subject, difficulty, onGameEnd }) => {
     const [feedback, setFeedback] = useState("");
 
     useEffect(() => {
-        console.log("Subject:", subject, "Difficulty:", difficulty); // Debugging log
-        console.log("Fetched Questions:", questionsData[subject]?.[difficulty]); // Debugging log
+        console.log("Subject:", subject, "Difficulty:", difficulty); 
+        console.log("Fetched Questions:", questionsData[subject]?.[difficulty]);
 
         if (questionsData[subject] && questionsData[subject][difficulty]) {
             setQuestions(questionsData[subject][difficulty]);
         } else {
-            setQuestions([]); // Ensure questions is always an array
+            setQuestions([]); 
         }
     }, [subject, difficulty]);
 
@@ -52,24 +50,26 @@ const QuizPage = ({ subject, difficulty, onGameEnd }) => {
     };
 
     return (
-        <div className="quiz-container flex flex-col items-center justify-center h-screen w-[800px] bg-gradient-to-r from-pink-400 to-blue-400 text-white transition-all duration-500 relative">
+        <div className="quiz-container flex flex-col items-center justify-center min-h-screen w-screen bg-gradient-to-r from-pink-400 to-blue-400 text-white transition-all duration-500 relative overflow-y-auto">
             <img 
-                src={QuizGif} 
-                alt="Quiz Time" 
-                className="absolute top-4 left-4 w-32 h-32 animate-pulse"
+                src="/Gifs/Quiz.gif" 
+                alt="Quiz " 
+                className="absolute top-4 left-4 w-40 h-40 animate-pulse"
             />
+            <img src="/Gifs/Thinking.gif" alt="thinking" 
+            className="absolute bottom-4 right-4 w-40 h-40"
+             />
             <div className="absolute top-4 right-4 flex items-center bg-white px-6 py-3 rounded-full shadow-lg text-black font-bold text-3xl border-4 border-yellow-400 animate-pulse">
-                <img src={ScoreIcon} alt="Score" className="w-12 h-12 mr-3" />
+                <img src="/Gifs/Score.gif" alt="Score" className="w-20 h-20 mr-3" />
                 {score}
             </div>
-
             {questions.length > 0 && questions[currentIndex] ? (
                 <>
                     <h2 className="text-5xl font-extrabold animate-pulse">
-                        🎈 Question {currentIndex + 1} of {questions.length}
+                         Question {currentIndex + 1} of {questions.length}
                     </h2>
                     <p className="text-3xl mt-6 bg-white text-black px-8 py-6 rounded-2xl shadow-xl">
-                        {questions[currentIndex]?.question ?? "Loading..."} {/* ✅ Safe access */}
+                        {questions[currentIndex]?.question ?? "Loading..."}
                     </p>
                     <div className="grid grid-cols-2 gap-6 mt-8">
                         {questions[currentIndex]?.options?.map((option, index) => (

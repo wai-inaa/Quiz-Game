@@ -1,19 +1,11 @@
 import { useState } from "react";
-import EnglishGif from "./English.gif";
-import UrduGif from "./urdu.gif";
-import MathGif from "./Math.gif";
-import DrawingGif from "./Drawing.gif";
-import ScienceGif from "./Science.gif"; 
-import FunGif from "./Fun.gif";
-import Teacher from "./teacher.gif";
-import LetsGo from "./GO.gif";
 
 const subjects = [
-  { name: "English", gif: EnglishGif },
-  { name: "Urdu", gif: UrduGif },
-  { name: "Math", gif: MathGif },
-  { name: "Drawing", gif: DrawingGif },
-  { name: "Science", gif: ScienceGif }, 
+  { name: "English", gif: "/Gifs/English.gif" },
+  { name: "Urdu", gif: "/Gifs/urdu.gif" },
+  { name: "Math", gif: "/Gifs/Math.gif" },
+  { name: "Drawing", gif: "Gifs/Drawing.gif" },
+  { name: "Science", gif: "Gifs/Science.gif" }, 
 ];
 
 const SubjectSelection = ({ onSelect }) => {
@@ -28,10 +20,10 @@ const SubjectSelection = ({ onSelect }) => {
   };
 
   return (
-    <div className="flex flex-col items-center justify-center h-screen w-[1200px] bg-gradient-to-r from-purple-500 via-pink-400 to-yellow-400 text-white relative overflow-hidden p-4">
-      <img src={FunGif} alt="Fun" className="w-40 h-40 absolute top-6 right-6 animate-bounce" />
-      <img src={Teacher} alt="Teacher" className="w-40 h-40 absolute bottom-8 left-8 animate-spin-slow" />
-      <img src={LetsGo} alt="LetsGo" className="w-40 h-40 absolute bottom-10 right-12 animate-pulse" />
+    <div className="flex flex-col items-center justify-center h-screen w-screen bg-gradient-to-r from-purple-500 via-pink-400 to-yellow-400 text-white relative overflow-hidden p-4">
+      <img src="/Gifs/Fun.gif" alt="Fun" className="w-40 h-40 absolute top-6 right-6 animate-bounce" />
+      <img src="/Gifs/teacher.gif" alt="Teacher" className="w-40 h-40 absolute bottom-8 left-8 animate-spin-slow" />
+      <img src="/Gifs/Go.gif" alt="LetsGo" className="w-40 h-40 absolute bottom-10 right-12 animate-pulse" />
       <h1 className="text-5xl font-extrabold bg-white text-purple-600 px-6 py-3 rounded-3xl shadow-lg">
         Select Subject & Difficulty Level
       </h1>

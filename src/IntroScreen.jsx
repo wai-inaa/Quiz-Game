@@ -1,8 +1,4 @@
 import { useState, useEffect } from "react";
-import Welcome from "./Welcome.gif";  
-import Students from "./Students.gif";
-import Alphabet from "./Alphabet.gif"; 
-import Numbers from "./Numbers.gif";
 
 const IntroScreen = ({ onStart }) => {
   const [userType, setUserType] = useState("");
@@ -14,16 +10,16 @@ const IntroScreen = ({ onStart }) => {
     return () => window.removeEventListener("resize", handleResize);
   }, []);
   return (
-    <div className="flex flex-col items-center justify-center h-screen bg-gradient-to-r from-yellow-200 via-pink-300 to-blue-300 text-white p-6 relative overflow-hidden">
+    <div className="flex flex-col items-center justify-center h-screen w-screen bg-gradient-to-r from-yellow-200 via-pink-300 to-blue-300 text-white p-6 relative overflow-hidden">
       <div className="flex items-center justify-center w-full animate-fade-in">
-        <img src={Welcome} alt="Welcome Back" className="w-48 h-48 mx-4 bounce" />
+        <img src="/Gifs/Welcome.gif" alt="Welcome Back" className="w-48 h-48 mx-4 bounce" />
         <h1 className="text-5xl font-bold text-center bg-white text-blue-600 px-6 py-3 rounded-2xl shadow-lg transform hover:scale-110 transition">
           Welcome to the Quiz!
         </h1>
-        <img src={Students} alt="Students" className="w-48 h-48 mx-4 bounce" />
+        <img src="/Gifs/Students.gif" alt="Students" className="w-48 h-48 mx-4 bounce" />
       </div>
-      <img src={Alphabet} alt="Alphabet Left" className="w-45 h-40 absolute bottom-8 left-2 animate-spin-slow" />
-      <img src={Numbers} alt="Numbers Right" className="w-45 h-40 absolute bottom-8 right-2 animate-spin-slow" />
+      <img src="/Gifs/Alphabet.gif" alt="Alphabet Left" className="w-45 h-40 absolute bottom-8 left-2 animate-spin-slow" />
+      <img src="/Gifs/Numbers.gif" alt="Numbers Right" className="w-45 h-40 absolute bottom-8 right-2 animate-spin-slow" />
       <div className="bg-white p-8 rounded-2xl shadow-2xl text-gray-800 w-96 flex flex-col items-center mt-6 animate-slide-up">
         <label className="text-xl font-bold mb-2">Enter Your Name:</label>
         <input

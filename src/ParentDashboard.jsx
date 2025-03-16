@@ -1,8 +1,4 @@
 import { useEffect, useState } from "react";
-import ParentGif from "./Parent.gif";
-import TrophyGif from "./Trophy.gif"; 
-import NoDataGif from "./noData.gif";
-import BackArrow from "./back.png"; 
 
 const ParentDashboard = ({ childName, onBack }) => {
   const [scores, setScores] = useState([]);
@@ -13,9 +9,9 @@ const ParentDashboard = ({ childName, onBack }) => {
   }, [childName]);
 
   return (
-    <div className="flex flex-col items-center justify-start w-[1200px] h-screen bg-gradient-to-r from-yellow-400 to-red-400 text-white p-6 relative">
+    <div className="flex flex-col items-center justify-start w-screen h-screen bg-gradient-to-r from-yellow-400 to-red-400 text-white p-6 relative">
       
-      <img src={ParentGif} alt="Parent" className="absolute top-6 left-6 w-40 h-40 animate-bounce" />
+      <img src="/Gifs/Parent.gif" alt="Parent" className="absolute top-6 left-6 w-40 h-40 animate-bounce" />
       
       <h1 className="text-5xl font-extrabold bg-white text-red-600 px-6 py-3 rounded-xl shadow-xl">
         📊 {childName}'s Progress Report
@@ -26,7 +22,7 @@ const ParentDashboard = ({ childName, onBack }) => {
           <p className="text-2xl font-bold text-white bg-red-600 px-6 py-3 rounded-lg">
             No quiz results found for {childName}
           </p>
-          <img src={NoDataGif} alt="No Data" className="w-56 h-56 mt-4" />
+          <img src="noData.gif" alt="No Data" className="w-56 h-56 mt-4" />
         </div>
       ) : (
         <div className="mt-6 w-2/3 bg-white p-6 rounded-xl shadow-2xl text-black border-4 border-yellow-400 max-h-[500px] overflow-y-auto">
@@ -47,7 +43,7 @@ const ParentDashboard = ({ childName, onBack }) => {
                   ></div>
                 </div>
 
-                {score.score >= 80 && <img src={TrophyGif} alt="Trophy" className="w-20 h-20 mt-4 mx-auto animate-pulse" />}
+                {score.score >= 80 && <img src="/Gifs/Trophy.gif" alt="Trophy" className="w-20 h-20 mt-4 mx-auto animate-pulse" />}
               </li>
             ))}
           </ul>
@@ -58,7 +54,7 @@ const ParentDashboard = ({ childName, onBack }) => {
         className="mt-8 flex items-center bg-blue-600 hover:bg-blue-800 text-white text-xl font-bold px-6 py-3 rounded-full shadow-xl transition-transform transform hover:scale-110"
         onClick={onBack}
       >
-        <img src={BackArrow} alt="Back" className="w-8 h-8 mr-2" />
+        <img src="/Gifs/back.png" alt="Back" className="w-8 h-8 mr-2" />
         Back to Main Menu
       </button>
     </div>
