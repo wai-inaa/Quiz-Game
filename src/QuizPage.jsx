@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
-import questionsData from "./questions.json";
-import CharacterMascot from "./Character"; 
-import SoundEffects from "./SoundEffects"; 
+import CharacterMascot from "./Character";
+import SoundEffects from "./SoundEffects";
 import WebcamUpload from "./WebCam";
 
 const QuizPage = ({ subject, difficulty, onGameEnd }) => {
@@ -13,14 +12,24 @@ const QuizPage = ({ subject, difficulty, onGameEnd }) => {
     const [feedback, setFeedback] = useState("");
 
     useEffect(() => {
-        console.log("Subject:", subject, "Difficulty:", difficulty); 
-        console.log("Fetched Questions:", questionsData[subject]?.[difficulty]);
+        const fetchQuestions = async () => {
+            try {
+                const response = await fetch("/questions.json");
+                if (!response.ok) throw new Error("Failed to load questions");
+                const data = await response.json();
 
-        if (questionsData[subject] && questionsData[subject][difficulty]) {
-            setQuestions(questionsData[subject][difficulty]);
-        } else {
-            setQuestions([]); 
-        }
+                console.log("Fetched Questions:", data);
+                if (data[subject] && data[subject][difficulty]) {
+                    setQuestions(data[subject][difficulty]);
+                } else {
+                    setQuestions([]);
+                }
+            } catch (error) {
+                console.error("Error fetching questions:", error);
+            }
+        };
+
+        fetchQuestions();
     }, [subject, difficulty]);
 
     const handleAnswerClick = (option) => {
@@ -56,9 +65,11 @@ const QuizPage = ({ subject, difficulty, onGameEnd }) => {
                 alt="Quiz " 
                 className="absolute top-4 left-4 w-40 h-40 animate-pulse"
             />
+
             <img src="/Gifs/Thinking.gif" alt="thinking" 
             className="absolute bottom-4 right-4 w-40 h-40"
-             />
+            />
+
             <div className="absolute top-4 right-4 flex items-center bg-white px-6 py-3 rounded-full shadow-lg text-black font-bold text-3xl border-4 border-yellow-400 animate-pulse">
                 <img src="/Gifs/Score.gif" alt="Score" className="w-20 h-20 mr-3" />
                 {score}
@@ -66,11 +77,12 @@ const QuizPage = ({ subject, difficulty, onGameEnd }) => {
             {questions.length > 0 && questions[currentIndex] ? (
                 <>
                     <h2 className="text-5xl font-extrabold animate-pulse">
-                         Question {currentIndex + 1} of {questions.length}
+                        Question {currentIndex + 1} of {questions.length}
                     </h2>
                     <p className="text-3xl mt-6 bg-white text-black px-8 py-6 rounded-2xl shadow-xl">
                         {questions[currentIndex]?.question ?? "Loading..."}
                     </p>
+
                     <div className="grid grid-cols-2 gap-6 mt-8">
                         {questions[currentIndex]?.options?.map((option, index) => (
                             <button
@@ -87,12 +99,15 @@ const QuizPage = ({ subject, difficulty, onGameEnd }) => {
                             </button>
                         ))}
                     </div>
+
                     <div className="mt-6">
                         {feedback && (
                             <div className="text-2xl font-bold animate-bounce">{feedback}</div>
                         )}
                     </div>
+
                     <CharacterMascot feedback={feedback} />
+
                     <div className="mt-6 flex flex-col items-center">
                         <WebcamUpload />
                     </div>
