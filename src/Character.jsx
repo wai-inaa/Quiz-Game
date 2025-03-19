@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 
-const CharacterMascot = ({ feedback }) => {
+const Character = ({ feedback }) => {
   const [characterImage, setCharacterImage] = useState("/Gifs/idle.gif");
   useEffect(() => {
     if (feedback.includes("✅")) {
@@ -24,4 +24,4 @@ const CharacterMascot = ({ feedback }) => {
     </div>
   );
 };
-export default CharacterMascot;
+export default Character;

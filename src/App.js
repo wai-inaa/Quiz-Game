@@ -12,12 +12,14 @@ function App() {
   const [difficulty, setDifficulty] = useState("");
   const [score, setScore] = useState(0);
   const [userType, setUserType] = useState("");
+
   const saveScore = (name, subject, difficulty, score) => {
     const scores = JSON.parse(localStorage.getItem("quizScores")) || [];
     scores.push({ name, subject, difficulty, score, date: new Date().toLocaleDateString() });
     localStorage.setItem("quizScores", JSON.stringify(scores));
     setGameState("scoreboard");
   };
+
   return (
     <div className="h-screen flex items-center justify-center bg-gradient-to-r from-blue-300 to-purple-400 text-white">
       {gameState === "intro" && (
@@ -36,6 +38,7 @@ function App() {
             setDifficulty(selectedDifficulty);
             setGameState("quiz");
           }}
+          onBack={() => setGameState("intro")} 
         />
       )}
       {gameState === "quiz" && (
@@ -61,10 +64,11 @@ function App() {
           score={score} 
           subject={subject} 
           difficulty={difficulty} 
-          onRestart={() => setGameState("intro")} 
+          onRestart={() => setGameState("selectSubject")}  
         />
       )}
     </div>
   );
 }
+
 export default App;

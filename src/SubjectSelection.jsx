@@ -4,11 +4,11 @@ const subjects = [
   { name: "English", gif: "/Gifs/English.gif" },
   { name: "Urdu", gif: "/Gifs/urdu.gif" },
   { name: "Math", gif: "/Gifs/Math.gif" },
-  { name: "Drawing", gif: "Gifs/Drawing.gif" },
-  { name: "Science", gif: "Gifs/Science.gif" }, 
+  { name: "Drawing", gif: "/Gifs/Drawing.gif" },
+  { name: "Science", gif: "/Gifs/Science.gif" }, 
 ];
 
-const SubjectSelection = ({ onSelect }) => {
+const SubjectSelection = ({ onSelect, onBack }) => {
   const [selectedSubject, setSelectedSubject] = useState("");
   const [selectedDifficulty, setSelectedDifficulty] = useState("Easy");
   const handleStartQuiz = () => {
@@ -62,6 +62,13 @@ const SubjectSelection = ({ onSelect }) => {
         onClick={handleStartQuiz}
       >
         Start Quiz 
+      </button>
+      <button 
+        className="mt-8 flex items-center bg-blue-600 hover:bg-blue-800 text-white text-xl font-bold px-6 py-3 rounded-full shadow-xl transition-transform transform hover:scale-110"
+        onClick={onBack}
+      >
+        <img src="/png/back.png" alt="Back" className="w-8 h-8 mr-2" />
+        Back to Main Menu
       </button>
     </div>
   );

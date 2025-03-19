@@ -22,7 +22,7 @@ const ParentDashboard = ({ childName, onBack }) => {
           <p className="text-2xl font-bold text-white bg-red-600 px-6 py-3 rounded-lg">
             No quiz results found for {childName}
           </p>
-          <img src="noData.gif" alt="No Data" className="w-56 h-56 mt-4" />
+          <img src="/Gifs/noData.gif" alt="No Data" className="w-56 h-56 mt-4" />
         </div>
       ) : (
         <div className="mt-6 w-2/3 bg-white p-6 rounded-xl shadow-2xl text-black border-4 border-yellow-400 max-h-[500px] overflow-y-auto">
@@ -32,7 +32,7 @@ const ParentDashboard = ({ childName, onBack }) => {
               <li key={index} className="p-4 border-b-2 border-gray-300 flex flex-col bg-gray-100 rounded-lg">
                 <p className="text-lg font-semibold">📅 {score.date}</p>
                 <p className="text-lg">📚 Subject: <span className="font-bold">{score.subject}</span></p>
-                <p className="text-lg">🎚 Level: <span className="font-bold">{score.level}</span></p>
+                <p className="text-lg">🎚 Level: <span className="font-bold">{score.difficulty}</span></p>
                 <p className="text-lg font-bold text-blue-600">🎯 Score: {score.score} / 100</p>
                 <div className="w-full bg-gray-300 h-6 rounded-full mt-2">
                   <div 
