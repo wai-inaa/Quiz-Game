@@ -1,5 +1,6 @@
 import React from "react";
 import Confetti from "react-confetti";
+
 const ScoreBoard = ({ score, onRestart }) => {
   let badge;
   let celebration = false;
@@ -18,9 +19,10 @@ const ScoreBoard = ({ score, onRestart }) => {
   }
 
   return (
-    <div className={`h-screen w-screen flex flex-col items-center justify-center ${
-      sadScreen ? "bg-gradient-to-r from-purple-400 to-red-400" : "bg-gradient-to-r from-purple-400 to-red-400"
-    } text-white relative`}>
+    <div className={`h-screen w-screen flex flex-col items-center justify-center relative p-4 ${
+      sadScreen ? "bg-gradient-to-r from-red-500 to-purple-600" : "bg-gradient-to-r from-purple-400 to-blue-400"
+    } text-white`}>
+      
       {celebration && <Confetti />}
       {!sadScreen ? (
         <>
@@ -30,7 +32,6 @@ const ScoreBoard = ({ score, onRestart }) => {
           <img src="/Gifs/Celebration.gif" alt="Celebration" className="w-60 h-60 mt-6 animate-spin-slow" />
         </>
       ) : (
-
         <>
           <h1 className="text-5xl font-extrabold text-red-500">☹️ Try Again!</h1>
           <p className="text-3xl mt-4 font-bold text-gray-300">Your Score: {score}/100</p>
@@ -46,5 +47,4 @@ const ScoreBoard = ({ score, onRestart }) => {
     </div>
   );
 };
-
 export default ScoreBoard;

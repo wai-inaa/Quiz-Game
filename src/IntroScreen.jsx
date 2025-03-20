@@ -1,26 +1,19 @@
-import { useState, useEffect } from "react";
-
+import { useState } from "react";
 const IntroScreen = ({ onStart }) => {
-  const [userType, setUserType] = useState("");
-  const [playerName, setPlayerName] = useState("");
-  const [ setWindowSize] = useState({ width: window.innerWidth, height: window.innerHeight });
-  useEffect(() => {
-    const handleResize = () => setWindowSize({ width: window.innerWidth, height: window.innerHeight });
-    window.addEventListener("resize", handleResize);
-    return () => window.removeEventListener("resize", handleResize);
-  }, []);
-  return (
+const [userType, setUserType] = useState("");
+const [playerName, setPlayerName] = useState("");
+return (
     <div className="flex flex-col items-center justify-center h-screen w-screen bg-gradient-to-r from-yellow-200 via-pink-300 to-blue-300 text-white p-6 relative overflow-hidden">
       <div className="flex items-center justify-center w-full animate-fade-in">
-        <img src="/Gifs/Welcome.gif" alt="Welcome Back" className="w-48 h-48 mx-4 bounce" />
-        <h1 className="text-5xl font-bold text-center bg-white text-blue-600 px-6 py-3 rounded-2xl shadow-lg transform hover:scale-110 transition">
+        <img src="/Gifs/Welcome.gif" alt="Welcome" className="w-[25%] md:w-[20%] lg:w-[15%] mx-4 bounce" />
+        <h1 className="text-3xl md:text-5xl font-bold text-center bg-white text-blue-600 px-6 py-3 rounded-2xl shadow-lg transform hover:scale-110 transition">
           Welcome to the Quiz!
         </h1>
-        <img src="/Gifs/Students.gif" alt="Students" className="w-48 h-48 mx-4 bounce" />
+        <img src="/Gifs/Students.gif" alt="Students" className="w-[25%] md:w-[20%] lg:w-[15%] mx-4 bounce" />
       </div>
-      <img src="/Gifs/Alphabet.gif" alt="Alphabet Left" className="w-45 h-40 absolute bottom-8 left-2 animate-spin-slow" />
-      <img src="/Gifs/Numbers.gif" alt="Numbers Right" className="w-45 h-40 absolute bottom-8 right-2 animate-spin-slow" />
-      <div className="bg-white p-8 rounded-2xl shadow-2xl text-gray-800 w-96 flex flex-col items-center mt-6 animate-slide-up">
+      <img src="/Gifs/Alphabet.gif" alt="Alphabet" className="w-[20%] md:w-[15%] absolute bottom-8 left-2 animate-spin-slow" />
+      <img src="/Gifs/Numbers.gif" alt="Numbers" className="w-[20%] md:w-[15%] absolute bottom-8 right-2 animate-spin-slow" />
+      <div className="bg-white p-6 md:p-8 rounded-2xl shadow-2xl text-gray-800 w-[90%] md:w-[60%] lg:w-[40%] flex flex-col items-center mt-6 animate-slide-up">
         <label className="text-xl font-bold mb-2">Enter Your Name:</label>
         <input
           type="text"
@@ -48,15 +41,25 @@ const IntroScreen = ({ onStart }) => {
             Parent
           </button>
         </div>
-        <button
-          className="mt-6 bg-purple-500 px-8 py-4 rounded-xl text-lg text-white shadow-lg hover:bg-purple-700 hover:scale-110 transition"
-          onClick={() => userType && playerName ? onStart(userType, playerName) : alert("Please enter name & select type!")}
-        >
-          Start Quiz 
-        </button>
+        {userType === "Student" && (
+          <button
+            className="mt-6 bg-purple-500 px-8 py-4 rounded-xl text-lg text-white shadow-lg hover:bg-purple-700 hover:scale-110 transition"
+            onClick={() => playerName ? onStart(userType, playerName) : alert("Please enter your name!")}
+          >
+            Start Quiz 
+          </button>
+        )}
+
+        {userType === "Parent" && (
+          <button
+            className="mt-6 bg-green-600 px-8 py-4 rounded-xl text-lg text-white shadow-lg hover:bg-green-800 hover:scale-110 transition"
+            onClick={() => playerName ? onStart(userType, playerName) : alert("Please enter your name!")}
+          >
+            See Results & Progress
+          </button>
+        )}
       </div>
     </div>
   );
 };
-
 export default IntroScreen;
